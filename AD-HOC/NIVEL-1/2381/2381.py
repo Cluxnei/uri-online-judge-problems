@@ -1,12 +1,12 @@
 line = input().split(' ') 
 n = int(line[0])
-x = int(line[1])
+k = int(line[1])
 
-nomes = list()
+names = list()
 
 for i in range(n):
-    nomes.append(input())
+    names.append(input())
 
-nomes.sort()
+names.sort()
 
-print(nomes[x - 1])
+print(names[k - 1])
