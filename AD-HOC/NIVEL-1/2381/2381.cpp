@@ -14,6 +14,5 @@ int main() {
     }
     sort(names.begin(), names.end());
     cout << names.at(k - 1) << endl;
-
     return 0; 
-} 
+}
