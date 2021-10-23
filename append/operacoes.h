@@ -1,0 +1,2 @@
+int MAX_LINHAS = 50;
+int MAX_COLUNAS = 50;
