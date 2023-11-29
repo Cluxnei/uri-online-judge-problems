@@ -5,13 +5,13 @@ while (lines.length) {
     const [ax, ay, az, bx, by, bz] = lines.shift().split(' ').map(n => +n);
     let time = +lines.shift();
     const r = Math.hypot(ax, ay, az);
-    const t = Math.PI * r * r * r; // find this value
+    const a = Math.asin(az / r);
+    const b = Math.asin(bz / r);
+    const t = 180 - b - a * (time);
     const x = ax * r * Math.cos(t) + bx * r * Math.sin(t);
     const y = ay * r * Math.cos(t) + by * r * Math.sin(t);
     const z = az * r * Math.cos(t) + bz * r * Math.sin(t);
 
     console.log(x, y, z);
-
-
 }
 
